@@ -1,0 +1,45 @@
+
+#1
+Score: 45.30
+Type: TREND
+Rules: EMA(12) > EMA(20) | RSI(7) < 60
+Profit: 55.72 %
+Winrate: 59.50 %
+DD: 2.05 %
+-------------------------
+
+#2
+Score: 34.62
+Type: MOMENTUM
+Rules: MACD(8,21,5) > SIGNAL | EMA(12) > EMA(200)
+Profit: 7.96 %
+Winrate: 100.00 %
+DD: -3.20 %
+-------------------------
+
+#3
+Score: 34.62
+Type: MOMENTUM
+Rules: MACD(8,21,5) > SIGNAL | EMA(12) > EMA(200)
+Profit: 7.96 %
+Winrate: 100.00 %
+DD: -3.20 %
+-------------------------
+
+#4
+Score: 32.71
+Type: MOMENTUM
+Rules: MACD(8,21,5) > SIGNAL | EMA(9) > EMA(12)
+Profit: 4.15 %
+Winrate: 100.00 %
+DD: -3.20 %
+-------------------------
+
+#5
+Score: 32.24
+Type: MOMENTUM
+Rules: MACD(12,26,9) > SIGNAL | EMA(100) > EMA(200)
+Profit: 3.20 %
+Winrate: 100.00 %
+DD: -3.20 %
+-------------------------

@@ -1,0 +1,50 @@
+
+#1
+Score: 31.14
+Type: MOMENTUM
+Rules: MACD(12,26,9) > SIGNAL | EMA(5) > EMA(9)
+Profit: 9.57 %
+Trades: 14
+Winrate: 85.71 %
+DD: -3.20 %
+-------------------------
+
+#2
+Score: 30.71
+Type: MOMENTUM
+Rules: MACD(8,21,5) > SIGNAL | EMA(50) > EMA(100)
+Profit: 22.96 %
+Trades: 51
+Winrate: 62.75 %
+DD: -2.00 %
+-------------------------
+
+#3
+Score: 30.71
+Type: MOMENTUM
+Rules: MACD(8,21,5) > SIGNAL | EMA(50) > EMA(100)
+Profit: 22.96 %
+Trades: 51
+Winrate: 62.75 %
+DD: -2.00 %
+-------------------------
+
+#4
+Score: 30.71
+Type: MOMENTUM
+Rules: MACD(8,21,5) > SIGNAL | EMA(50) > EMA(100)
+Profit: 22.96 %
+Trades: 51
+Winrate: 62.75 %
+DD: -2.00 %
+-------------------------
+
+#5
+Score: 30.65
+Type: BREAKOUT
+Rules: PRICE > BB_UPPER(20,2.5) | ATR(21) RISING
+Profit: 8.58 %
+Trades: 7
+Winrate: 85.71 %
+DD: -3.20 %
+-------------------------
