@@ -1,4 +1,4 @@
-### NovaXAgent
+# NovaXAgent
 
 ##AI-Powered Trading Strategy Research & Execution Platform
 
@@ -6,7 +6,7 @@ NovaXAgent is a modular, institutional-grade trading research and execution syst
 
 ## 🚀 Current Status
 
-# Completed:
+### Completed:
 
 ✅ AI-powered strategy generation engine
 
@@ -22,11 +22,11 @@ NovaXAgent is a modular, institutional-grade trading research and execution syst
 
 ✅ Worker-based strategy execution system
 
-# In Progress / Partial:
+### In Progress / Partial:
 
 ⚠️ UI development (started but not completed due to limited frontend experience)
 
-##🎯 What This Project Does
+### 🎯 What This Project Does
 
 NovaXAgent allows users to:
 
@@ -42,7 +42,8 @@ Monitor live performance from dashboard
 
 Secure funds inside a vault contract
 
-🏗️ System Architecture
+## 🏗️ System Architecture
+```bash
 Frontend (Next.js / React)
         ↓
 Backend API (Node.js / Fastify)
@@ -52,9 +53,10 @@ AI Engine (Gemini)
 Trading Core (Strategy Engine + Workers)
         ↓
 Blockchain (Smart Contract - Devnet)
+```
 
-🔌 Core Modules
-1. AI Engine
+## 🔌 Core Modules
+### 1. AI Engine
 
 Generates strategies
 
@@ -64,7 +66,7 @@ Ranks performance
 
 Explains logic
 
-2. Strategy Engine
+### 2. Strategy Engine
 
 Real-time indicator calculation
 
@@ -74,13 +76,13 @@ Risk control
 
 Logging
 
-3. Simulation Engine
+### 3. Simulation Engine
 
 Backtesting (historical candles)
 
 Forward testing (live prices)
 
-4. Execution Engine
+### 4. Execution Engine
 
 Sends transactions to smart contract
 
@@ -88,7 +90,7 @@ Handles confirmations
 
 Logs execution results
 
-5. WebSocket Price Layer
+### 5. WebSocket Price Layer
 
 Single connection
 
@@ -98,7 +100,7 @@ Auto reconnect
 
 Heartbeat monitoring
 
-6. Smart Contract (Devnet)
+## 6. Smart Contract (Devnet)
 
 Vault management
 
@@ -108,7 +110,7 @@ Ownership guards
 
 Transaction validation
 
-🧪 Current Features
+## 🧪 Current Features
 
 Strategy backtesting engine
 
@@ -124,7 +126,7 @@ Worker-based processing
 
 Contract-based trade execution
 
-🛠 Tech Stack
+## 🛠 Tech Stack
 Layer	Technology
 Frontend	Next.js, React
 Backend	Node.js, Fastify
@@ -134,13 +136,13 @@ Blockchain	MultiversX (Devnet)
 Streaming	WebSockets
 Workers	PM2
 Language	TypeScript
-📌 Honest Note About UI
+## 📌 Honest Note About UI
 
 I attempted to build the frontend UI (sandbox terminal, dashboard, vault, etc.) but could not complete it due to limited experience with advanced frontend design and state management.
 
 The backend and engine are fully functional and production-structured, but the UI layer remains a work in progress.
 
-🧠 Smart Contract
+## 🧠 Smart Contract
 
 A smart contract has been developed and deployed on Devnet that:
 
@@ -152,7 +154,7 @@ Stores vault balances
 
 Supports strategy updates
 
-🧩 Project Structure
+## 🧩 Project Structure
 apps/
  ├─ api
  ├─ strategy-engine
@@ -161,14 +163,15 @@ apps/
  ├─ ui (partial)
  ├─ smart-contract
 
-🔒 Security
+## 🔒 Security
 Layer	Protection
 UI	Confirmation dialogs
 Backend	Mode locks
 Engine	Risk limits
 Contract	Caller guards
 Network	Devnet only
-⚡ Roadmap
+
+## ⚡ Roadmap
 UI
 
 Complete dashboard
@@ -233,7 +236,7 @@ Executing trades
 
 Portfolio insights
 
-🔐 Smart Contract – NovaxVault (Devnet)
+## 🔐 Smart Contract – NovaxVault (Devnet)
 
 NovaXAgent uses a custom-built smart contract deployed on MultiversX Devnet to securely execute trades and manage funds.
 
@@ -250,20 +253,21 @@ Network: Devnet
 Purpose: Secure automated trade execution
 
 Constructor
+```ts
 constructor(router_address: Address)
-
+```
 
 Initializes the contract with the DEX router address.
-
+```ts
 Core Endpoint
 executeSwap
 executeSwap(
   token_out: TokenIdentifier,
   amount_out_min: BigUint
 )
+```
 
-
-Description:
+### Description:
 
 Called by the AI execution engine
 
@@ -286,7 +290,7 @@ getRouterAddress()
 
 Returns the configured router address.
 
-Contract Capabilities
+### Contract Capabilities
 
 ✔ Vault-based fund management
 ✔ Owner-only execution
@@ -295,7 +299,7 @@ Contract Capabilities
 ✔ Upgradeable
 ✔ Devnet restricted
 
-Role in System
+### Role in System
 Execution Engine
       ↓
 NovaxVault Smart Contract
@@ -304,7 +308,7 @@ DEX Router
       ↓
 Trade Execution
 
-Why This Matters
+### Why This Matters
 
 This contract ensures:
 
@@ -314,7 +318,7 @@ This contract ensures:
 • Fully auditable
 • Zero trust execution
 
-Security Model
+### Security Model
 Layer	Protection
 Caller	Owner-only
 Execution	Slippage control
@@ -322,7 +326,7 @@ Network	Devnet only
 Upgradability	Controlled
 Future Plans
 
-Mainnet deployment
+### Mainnet deployment
 
 Multi-strategy support
 
@@ -332,7 +336,7 @@ Multi-sig ownership
 
 Fee management
 
-🎯 Vision
+## 🎯 Vision
 
 NovaXAgent aims to become a:
 
@@ -344,7 +348,7 @@ Automated execution platform
 
 Professional-grade strategy builder
 
-⚠ Disclaimer
+## ⚠ Disclaimer
 
 This project is for:
 
@@ -357,7 +361,7 @@ Development purposes
 Not financial advice.
 Use at your own risk.
 
-👨‍💻 Author
+##👨‍💻 Author
 
 Built by Mohammed Zaid
 Passionate about:
@@ -367,12 +371,3 @@ Quant trading
 AI systems
 
 Blockchain automation
-
-⭐ Why This Project Stands Out
-
-✔ Modular architecture
-✔ Production-grade backend
-✔ Smart contract integration
-✔ AI research engine
-✔ Forward testing infra
-✔ Real execution layer
