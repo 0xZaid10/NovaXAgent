@@ -1,0 +1,63 @@
+{
+    "buildInfo": {
+        "contractCrate": {
+            "name": "novax-vault",
+            "version": "0.0.0"
+        },
+        "framework": {
+            "name": "multiversx-sc",
+            "version": "0.64.0"
+        }
+    },
+    "name": "NovaxVault",
+    "constructor": {
+        "inputs": [
+            {
+                "name": "router_address",
+                "type": "Address"
+            }
+        ],
+        "outputs": []
+    },
+    "upgradeConstructor": {
+        "inputs": [],
+        "outputs": []
+    },
+    "endpoints": [
+        {
+            "docs": [
+                "The AI Agent calls this to execute a trade.",
+                "Only the owner (the AI Agent's wallet) can trigger this."
+            ],
+            "name": "executeSwap",
+            "mutability": "mutable",
+            "payableInTokens": [
+                "*"
+            ],
+            "inputs": [
+                {
+                    "name": "token_out",
+                    "type": "TokenIdentifier"
+                },
+                {
+                    "name": "amount_out_min",
+                    "type": "BigUint"
+                }
+            ],
+            "outputs": []
+        },
+        {
+            "name": "getRouterAddress",
+            "mutability": "readonly",
+            "inputs": [],
+            "outputs": [
+                {
+                    "type": "Address"
+                }
+            ]
+        }
+    ],
+    "esdtAttributes": [],
+    "hasCallback": false,
+    "types": {}
+}
