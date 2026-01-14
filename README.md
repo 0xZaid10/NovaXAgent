@@ -1,12 +1,12 @@
-NovaXAgent
+### NovaXAgent
 
-AI-Powered Trading Strategy Research & Execution Platform
+##AI-Powered Trading Strategy Research & Execution Platform
 
 NovaXAgent is a modular, institutional-grade trading research and execution system designed to generate, test, and deploy algorithmic strategies using AI, real-time market data, and blockchain smart contracts.
 
-🚀 Current Status
+## 🚀 Current Status
 
-Completed:
+# Completed:
 
 ✅ AI-powered strategy generation engine
 
@@ -22,11 +22,11 @@ Completed:
 
 ✅ Worker-based strategy execution system
 
-In Progress / Partial:
+# In Progress / Partial:
 
 ⚠️ UI development (started but not completed due to limited frontend experience)
 
-🎯 What This Project Does
+##🎯 What This Project Does
 
 NovaXAgent allows users to:
 
@@ -232,6 +232,105 @@ Modifying risk
 Executing trades
 
 Portfolio insights
+
+🔐 Smart Contract – NovaxVault (Devnet)
+
+NovaXAgent uses a custom-built smart contract deployed on MultiversX Devnet to securely execute trades and manage funds.
+
+Contract Info
+
+Name: NovaxVault
+
+Crate: novax-vault
+
+Framework: multiversx-sc v0.64.0
+
+Network: Devnet
+
+Purpose: Secure automated trade execution
+
+Constructor
+constructor(router_address: Address)
+
+
+Initializes the contract with the DEX router address.
+
+Core Endpoint
+executeSwap
+executeSwap(
+  token_out: TokenIdentifier,
+  amount_out_min: BigUint
+)
+
+
+Description:
+
+Called by the AI execution engine
+
+Executes a swap on the DEX
+
+Only callable by contract owner (AI agent wallet)
+
+Accepts any token (* payable)
+
+Security:
+
+Ownership protected
+
+Prevents unauthorized execution
+
+Enforced on-chain
+
+Readonly Endpoint
+getRouterAddress()
+
+Returns the configured router address.
+
+Contract Capabilities
+
+✔ Vault-based fund management
+✔ Owner-only execution
+✔ Slippage protection (amount_out_min)
+✔ Supports any token
+✔ Upgradeable
+✔ Devnet restricted
+
+Role in System
+Execution Engine
+      ↓
+NovaxVault Smart Contract
+      ↓
+DEX Router
+      ↓
+Trade Execution
+
+Why This Matters
+
+This contract ensures:
+
+• Funds never leave user custody
+• Backend cannot steal funds
+• All trades are on-chain
+• Fully auditable
+• Zero trust execution
+
+Security Model
+Layer	Protection
+Caller	Owner-only
+Execution	Slippage control
+Network	Devnet only
+Upgradability	Controlled
+Future Plans
+
+Mainnet deployment
+
+Multi-strategy support
+
+Emergency withdrawal
+
+Multi-sig ownership
+
+Fee management
 
 🎯 Vision
 
