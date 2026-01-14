@@ -1,6 +1,6 @@
 # NovaXAgent
 
-##AI-Powered Trading Strategy Research & Execution Platform
+## AI-Powered Trading Strategy Research & Execution Platform
 
 NovaXAgent is a modular, institutional-grade trading research and execution system designed to generate, test, and deploy algorithmic strategies using AI, real-time market data, and blockchain smart contracts.
 
