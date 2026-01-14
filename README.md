@@ -172,7 +172,7 @@ Contract	Caller guards
 Network	Devnet only
 
 ## ⚡ Roadmap
-UI
+### UI
 
 Complete dashboard
 
@@ -182,7 +182,7 @@ Strategy cards
 
 Vault management
 
-AI
+### AI
 
 Multi-strategy generation
 
@@ -192,7 +192,7 @@ Risk-adjusted ranking
 
 Engine
 
-More indicators:
+### More indicators:
 
 Bollinger Bands
 
@@ -206,7 +206,7 @@ Trailing stop
 
 Dynamic position sizing
 
-Platform
+### Platform
 
 Multi-user support
 
@@ -218,13 +218,13 @@ Strategy marketplace
 
 Execution
 
-Mainnet support
+### Mainnet support
 
 Advanced transaction monitoring
 
 Slippage protection
 
-AI Agent
+### AI Agent
 
 Chatbot for:
 
