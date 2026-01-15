@@ -1,8 +1,8 @@
 # NovaXAgent
 
-## AI-Powered Trading Strategy Research & Execution Platform
+## AI-Powered Trading Strategy Research & Execution Platform 
 
-NovaXAgent is a modular, institutional-grade trading research and execution system designed to generate, test, and deploy algorithmic strategies using AI, real-time market data, and blockchain smart contracts.
+NovaXAgent is a modular, institutional-grade trading research and execution system designed to generate, test, and deploy algorithmic strategies using AI, real-time market data, and blockchain smart contracts. Pairs are fetched from xExchange and strategy based trades are executed on xExchange via Multiversx Smart Contract. The Smart contract acts as a vault , and transactions are signed by the agent.
 
 ## 🚀 Current Status
 
